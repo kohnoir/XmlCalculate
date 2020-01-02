@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <TextView
+        android:id="@+id/ViewCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="bottom|right"
+        android:hint="@string/Zero"
+        android:textSize="25sp"
+        android:textColor="@color/colorSnow">
+
+    </TextView>
+    <TextView
+        android:id="@+id/Vivod"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/ViewCalculate"
+        android:layout_weight="1"
+        android:gravity="bottom|right"
+        android:hint="@string/Zero"
+        android:textSize="20sp"
+        android:textColor="@color/colorSnow">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/Ca"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Vivod"
+        android:gravity="center"
+        android:text="@string/C"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/PlusMinus"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Vivod"
+        android:layout_toRightOf="@id/Ca"
+        android:gravity="center"
+        android:text="@string/PlusMinus"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/PlusMinus"
+        android:layout_below="@id/Vivod"
+        android:gravity="center"
+        android:text="@string/Precent"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/percent"
+        android:layout_below="@id/Vivod"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="@string/Devision" />
+    <Button
+        android:id="@+id/One"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Ca"
+
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/One" />
+
+    <Button
+        android:id="@+id/Two"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/PlusMinus"
+        android:layout_toRightOf="@id/Ca"
+        android:gravity="center"
+        android:text="@string/Two"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Three"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/percent"
+        android:layout_toRightOf="@id/PlusMinus"
+        android:gravity="center"
+        android:text="@string/Three"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/X"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/division"
+        android:layout_toRightOf="@id/percent"
+        android:gravity="center"
+        android:text="@string/X"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Four"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/One"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/Four" />
+    <Button
+        android:id="@+id/Five"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Two"
+        android:layout_toRightOf="@id/One"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/Five" />
+
+    <Button
+        android:id="@+id/Six"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Three"
+        android:layout_toRightOf="@id/Two"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="@string/Six" />
+    <Button
+        android:id="@+id/Minus"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/X"
+        android:layout_toRightOf="@id/Three"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/Minus" />
+    <Button
+        android:id="@+id/Seven"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Four"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/Seven" />
+    <Button
+        android:id="@+id/Eight"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/Five"
+        android:layout_toRightOf="@id/Four"
+        android:gravity="center"
+        android:text="@string/Eight" />
+
+    <Button
+        android:id="@+id/Nine"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/Six"
+        android:layout_toRightOf="@id/Five"
+        android:gravity="center"
+        android:text="@string/Nine" />
+    <Button
+        android:id="@+id/Plus"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Minus"
+        android:layout_toRightOf="@id/Six"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/Plus" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_below="@id/Seven"
+        android:id="@+id/Zero"
+        android:text="@string/Zero"
+        android:gravity="center">
+
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:id="@+id/Point"
+        android:layout_below="@id/Nine"
+        android:layout_toRightOf="@id/Eight"
+        android:text="@string/Point"
+        android:gravity="center">
+    </Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:id="@+id/equall"
+        android:layout_below="@id/Plus"
+        android:layout_toRightOf="@id/Nine"
+        android:text="@string/Equall"
+        android:gravity="center">
+    </Button>
+
+</RelativeLayout>
