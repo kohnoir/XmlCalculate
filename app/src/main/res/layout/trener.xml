@@ -12,19 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:gravity="bottom|right"
-        android:hint="@string/Zero"
+        android:hint="@string/zero"
         android:textSize="25sp"
         android:textColor="@color/colorSnow">
 
     </TextView>
     <TextView
-        android:id="@+id/Vivod"
+        android:id="@+id/outcome"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_below="@id/ViewCalculate"
-        android:layout_weight="1"
         android:gravity="bottom|right"
-        android:hint="@string/Zero"
+        android:hint="@string/zero"
         android:textSize="20sp"
         android:textColor="@color/colorSnow">
 
@@ -34,29 +33,29 @@
         android:id="@+id/Ca"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/Vivod"
+        android:layout_below="@id/outcome"
         android:gravity="center"
-        android:text="@string/C"
+        android:text="@string/clear"
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/PlusMinus"
+        android:id="@+id/plus_minus"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/Vivod"
+        android:layout_below="@id/outcome"
         android:layout_toRightOf="@id/Ca"
         android:gravity="center"
-        android:text="@string/PlusMinus"
+        android:text="@string/plus_minus"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/percent"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_toRightOf="@id/PlusMinus"
-        android:layout_below="@id/Vivod"
+        android:layout_toRightOf="@id/plus_minus"
+        android:layout_below="@id/outcome"
         android:gravity="center"
-        android:text="@string/Precent"
+        android:text="@string/precent"
         android:textSize="25sp" />
 
     <Button
@@ -64,12 +63,12 @@
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_toRightOf="@id/percent"
-        android:layout_below="@id/Vivod"
+        android:layout_below="@id/outcome"
         android:gravity="center"
         android:textSize="25sp"
-        android:text="@string/Devision" />
+        android:text="@string/division" />
     <Button
-        android:id="@+id/One"
+        android:id="@+id/one"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_below="@id/Ca"
@@ -77,26 +76,26 @@
         android:layout_weight="1"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="@string/One" />
+        android:text="@string/one" />
 
     <Button
-        android:id="@+id/Two"
+        android:id="@+id/two"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/PlusMinus"
+        android:layout_below="@id/plus_minus"
         android:layout_toRightOf="@id/Ca"
         android:gravity="center"
-        android:text="@string/Two"
+        android:text="@string/two"
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/Three"
+        android:id="@+id/three"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_below="@id/percent"
-        android:layout_toRightOf="@id/PlusMinus"
+        android:layout_toRightOf="@id/plus_minus"
         android:gravity="center"
-        android:text="@string/Three"
+        android:text="@string/three"
         android:textSize="25sp" />
     <Button
         android:id="@+id/X"
@@ -105,89 +104,89 @@
         android:layout_below="@id/division"
         android:layout_toRightOf="@id/percent"
         android:gravity="center"
-        android:text="@string/X"
+        android:text="@string/multiply"
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/Four"
+        android:id="@+id/four"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/One"
+        android:layout_below="@id/one"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="@string/Four" />
+        android:text="@string/four" />
     <Button
-        android:id="@+id/Five"
+        android:id="@+id/five"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/Two"
-        android:layout_toRightOf="@id/One"
+        android:layout_below="@id/two"
+        android:layout_toRightOf="@id/one"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="@string/Five" />
+        android:text="@string/five" />
 
     <Button
-        android:id="@+id/Six"
+        android:id="@+id/six"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/Three"
-        android:layout_toRightOf="@id/Two"
+        android:layout_below="@id/three"
+        android:layout_toRightOf="@id/two"
         android:gravity="center"
         android:textSize="25sp"
-        android:text="@string/Six" />
+        android:text="@string/six" />
     <Button
-        android:id="@+id/Minus"
+        android:id="@+id/minus"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_below="@id/X"
-        android:layout_toRightOf="@id/Three"
+        android:layout_toRightOf="@id/three"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="@string/Minus" />
+        android:text="@string/minus" />
     <Button
-        android:id="@+id/Seven"
+        android:id="@+id/seven"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/Four"
+        android:layout_below="@id/four"
         android:layout_weight="1"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="@string/Seven" />
+        android:text="@string/seven" />
     <Button
-        android:id="@+id/Eight"
+        android:id="@+id/eight"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:textSize="25sp"
-        android:layout_below="@id/Five"
-        android:layout_toRightOf="@id/Four"
+        android:layout_below="@id/five"
+        android:layout_toRightOf="@id/four"
         android:gravity="center"
-        android:text="@string/Eight" />
+        android:text="@string/eight" />
 
     <Button
-        android:id="@+id/Nine"
+        android:id="@+id/nine"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:textSize="25sp"
-        android:layout_below="@id/Six"
-        android:layout_toRightOf="@id/Five"
+        android:layout_below="@id/six"
+        android:layout_toRightOf="@id/five"
         android:gravity="center"
-        android:text="@string/Nine" />
+        android:text="@string/nine" />
     <Button
-        android:id="@+id/Plus"
+        android:id="@+id/plus"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:layout_below="@id/Minus"
-        android:layout_toRightOf="@id/Six"
+        android:layout_below="@id/minus"
+        android:layout_toRightOf="@id/six"
         android:textSize="25sp"
         android:gravity="center"
-        android:text="@string/Plus" />
+        android:text="@string/plus" />
     <Button
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:textSize="25sp"
-        android:layout_below="@id/Seven"
-        android:id="@+id/Zero"
-        android:text="@string/Zero"
+        android:layout_below="@id/seven"
+        android:id="@+id/zero"
+        android:text="@string/zero"
         android:gravity="center">
 
     </Button>
@@ -195,20 +194,20 @@
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:textSize="25sp"
-        android:id="@+id/Point"
-        android:layout_below="@id/Nine"
-        android:layout_toRightOf="@id/Eight"
-        android:text="@string/Point"
+        android:id="@+id/point"
+        android:layout_below="@id/nine"
+        android:layout_toRightOf="@id/eight"
+        android:text="@string/point"
         android:gravity="center">
     </Button>
     <Button
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:textSize="25sp"
-        android:id="@+id/equall"
-        android:layout_below="@id/Plus"
-        android:layout_toRightOf="@id/Nine"
-        android:text="@string/Equall"
+        android:id="@+id/equal"
+        android:layout_below="@id/plus"
+        android:layout_toRightOf="@id/nine"
+        android:text="@string/equal"
         android:gravity="center">
     </Button>
 </RelativeLayout>

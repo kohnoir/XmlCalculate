@@ -9,190 +9,190 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1;
-    Button btn2;
-    Button btn3;
-    Button btn4;
-    Button btn5;
-    Button btn6;
-    Button btn7;
-    Button btn8;
-    Button btn9;
-    Button btn0;
-    Button btnPoint;
-    Button btnC;
-    Button btnPlusMinus;
-    Button btnProcent;
-    Button btnPlus;
-    Button btnX;
-    Button btnMinus;
-    Button btnDivvision;
-    Button btnEquall;
-    String stroka ="";
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
+    private Button btn4;
+    private Button btn5;
+    private Button btn6;
+    private Button btn7;
+    private Button btn8;
+    private Button btn9;
+    private Button btn0;
+    private Button btnPoint;
+    private Button btnC;
+    private Button btnPlusMinus;
+    private Button btnProcent;
+    private Button btnPlus;
+    private Button btnX;
+    private Button btnMinus;
+    private Button btnDivision;
+    private  Button btnEqual;
+    private  String line ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trener);
-        zapisStroki();
-
+        init();
+        writingString();
     }
-    private void zapisStroki(){
-        btn1 = findViewById(R.id.One);
-        btn2 = findViewById(R.id.Two);
-        btn3 = findViewById(R.id.Three);
-        btn4 = findViewById(R.id.Four);
-        btn5 = findViewById(R.id.Five);
-        btn6 = findViewById(R.id.Six);
-        btn7 = findViewById(R.id.Seven);
-        btn8 = findViewById(R.id.Eight);
-        btn9 = findViewById(R.id.Nine);
-        btn0 = findViewById(R.id.Zero);
+    private  void init(){
+        btn1 = findViewById(R.id.one);
+        btn2 = findViewById(R.id.two);
+        btn3 = findViewById(R.id.three);
+        btn4 = findViewById(R.id.four);
+        btn5 = findViewById(R.id.five);
+        btn6 = findViewById(R.id.six);
+        btn7 = findViewById(R.id.seven);
+        btn8 = findViewById(R.id.eight);
+        btn9 = findViewById(R.id.nine);
+        btn0 = findViewById(R.id.zero);
 
-        btnPoint = findViewById(R.id.Point);
+        btnPoint = findViewById(R.id.point);
         btnC = findViewById(R.id.Ca);
 
         btnProcent = findViewById(R.id.percent);
-        btnPlus = findViewById(R.id.Plus);
-        btnMinus = findViewById(R.id.Minus);
+        btnPlus = findViewById(R.id.plus);
+        btnMinus = findViewById(R.id.minus);
         btnX = findViewById(R.id.X);
-        btnDivvision = findViewById(R.id.division);
-        btnPlusMinus = findViewById(R.id.PlusMinus);
-        btnEquall = findViewById(R.id.equall);
-
-
+        btnDivision = findViewById(R.id.division);
+        btnPlusMinus = findViewById(R.id.plus_minus);
+        btnEqual = findViewById(R.id.equal);
+    }
+    private void writingString(){
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "1";
-                String vivod  = stroka;
+                line = line + "1";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "2";
-                String vivod  = stroka;
+                line = line + "2";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "3";
-                String vivod  = stroka;
+                line = line + "3";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "4";
-                String vivod  = stroka;
+                line = line + "4";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "5";
-                String vivod  = stroka;
+                line = line + "5";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "6";
-                String vivod  = stroka;
+                line = line + "6";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "7";
-                String vivod  = stroka;
+                line = line + "7";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "8";
-                String vivod  = stroka;
+                line = line + "8";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "9";
-                String vivod  = stroka;
+                line = line + "9";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = stroka + "0";
-                String vivod  = stroka;
+                line = line + "0";
+                String outcome  = line;
                 TextView textView = findViewById(R.id.ViewCalculate);
-                textView.setText(stroka);
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                textView.setText(line);
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btnC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stroka = "";
+                line = "";
                 TextView textView = findViewById(R.id.ViewCalculate);
                 textView.setText("");
-                String vivod  ="";
-                TextView textVivod = findViewById(R.id.Vivod);
-                textVivod.setText(vivod);
+                String outcome  ="";
+                TextView textOutcome = findViewById(R.id.outcome);
+                textOutcome.setText(outcome);
             }
         });
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(stroka.matches("\\S*")){
-                    stroka = stroka + " + ";
-                    String vivod  = stroka;
+                if(line.matches("\\S*")){
+                    line = line + " + ";
+                    String outcome  = line;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
                 }
 
             }
@@ -200,54 +200,54 @@ public class MainActivity extends AppCompatActivity {
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(stroka.matches("\\d*")){
-                    stroka = stroka + " - ";
-                    String vivod  = stroka;
+                if(line.matches("\\d*")){
+                    line = line + " - ";
+                    String outcome  = line;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
                 }
             }
         });
         btnX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(stroka.matches("\\d*")){
-                    stroka = stroka + " x ";
-                    String vivod  = stroka;
+                if(line.matches("\\d*")){
+                    line = line + " x ";
+                    String outcome  = line;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
                 }
 
             }
         });
-        btnDivvision.setOnClickListener(new View.OnClickListener() {
+        btnDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(stroka.matches("\\d*")){
-                    stroka = stroka + " ÷ ";
-                    String vivod  = stroka;
+                if(line.matches("\\d*")){
+                    line = line + " ÷ ";
+                    String outcome  = line;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
                 }
             }
         });
         btnPlusMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(stroka.matches("\\d*")){
-                    double chislo = Double.parseDouble(stroka);
+                if(line.matches("\\d*")){
+                    double chislo = Double.parseDouble(line);
                     chislo = chislo * (-1);
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    String vivod = String.valueOf(chislo);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
+                    String outcome = String.valueOf(chislo);
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
                 }else{
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "Введите число", Toast.LENGTH_SHORT);
@@ -258,158 +258,152 @@ public class MainActivity extends AppCompatActivity {
         btnPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String [] pointChisla = stroka.split(" ");
-                if(pointChisla.length == 1 & stroka.matches("\\d*")){
-                    stroka = stroka + ".";
-                    String vivod  = stroka;
+                String [] pointNumber = line.split(" ");
+                if(pointNumber.length == 1 & line.matches("\\d*")){
+                    line = line + ".";
+                    String outcome  = line;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
-                }else if(pointChisla.length == 3 & stroka.matches("\\.{2}")){
-                    stroka = stroka + ".";
-                    String vivod  = stroka;
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
+                }else if(pointNumber.length == 3 & line.matches("\\.{2}")){
+                    line = line + ".";
+                    String outcome  = line;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    textView.setText(stroka);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
+                    textView.setText(line);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
                 }
             }
         });
-        btnEquall.setOnClickListener(new View.OnClickListener() {
+        btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] kuskiStroki = stroka.split(" ");//Я хотел создать метод в методе но оказалось что это невозможно и так
+                String[] lineParts = line.split(" ");//Я хотел создать метод в методе но оказалось что это невозможно и так
                 // как все вычисления завязаны на знаке равно я не могу вынести это в другой класс и проще просто продублировать вычисления
-                if (kuskiStroki.length == 3) {
-                    if (!kuskiStroki[0].matches("//D") & !kuskiStroki[2].matches("//D")) {
-                        double PervoeChislo = Double.parseDouble(kuskiStroki[0]);
-                        double VtoroeChislo = Double.parseDouble(kuskiStroki[2]);
+                if (lineParts.length == 3) {
+                    if (!lineParts[0].matches("//D") & !lineParts[2].matches("//D")) {
+                        double firstNumber = Double.parseDouble(lineParts[0]);
+                        double secondNumber = Double.parseDouble(lineParts[2]);
 
-                        stroka = stroka + " =";
+                        line = line + " =";
                         TextView textView = findViewById(R.id.ViewCalculate);
-                        textView.setText(stroka);
-                        TextView textVivod = findViewById(R.id.Vivod);
-                        textVivod.setText(stroka);
+                        textView.setText(line);
+                        TextView textOutcome = findViewById(R.id.outcome);
+                        textOutcome.setText(line);
 
-                        if (kuskiStroki[1].equals("x")) {
-                            double vivod = PervoeChislo * VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("x")) {
+                            double outcome = firstNumber * secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("+")) {
-                            double vivod = PervoeChislo + VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("+")) {
+                            double outcome = firstNumber + secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("-")) {
-                            double vivod = PervoeChislo - VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("-")) {
+                            double outcome = firstNumber - secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("÷")) {
-                            double vivod = PervoeChislo / VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("÷")) {
+                            double outcome = firstNumber / secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        stroka = "";
-                    } else if (!kuskiStroki[0].matches("//D") & kuskiStroki[2].matches("//D")) {
-                        int doublePervoeChislo = Integer.parseInt(kuskiStroki[0]);
-                        double PervoeChislo = doublePervoeChislo;
-                        double VtoroeChislo = Double.parseDouble(kuskiStroki[2]);
+                        line = "";
+                    } else if (!lineParts[0].matches("//D") & lineParts[2].matches("//D")) {
+                        int doubleFirstNumber = Integer.parseInt(lineParts[0]);
+                        double secondNumber = Double.parseDouble(lineParts[2]);
 
-                        stroka = stroka + " =";
+                        line = line + " =";
                         TextView textView = findViewById(R.id.ViewCalculate);
-                        textView.setText(stroka);
-                        TextView textVivod = findViewById(R.id.Vivod);
-                        textVivod.setText(stroka);
+                        textView.setText(line);
+                        TextView textOutcome = findViewById(R.id.outcome);
+                        textOutcome.setText(line);
 
-                        if (kuskiStroki[1].equals("x")) {
-                            double vivod = PervoeChislo * VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("x")) {
+                            double outcome = (double) doubleFirstNumber * secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("+")) {
-                            double vivod = PervoeChislo + VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("+")) {
+                            double outcome = (double) doubleFirstNumber + secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("-")) {
-                            double vivod = PervoeChislo - VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("-")) {
+                            double outcome = (double) doubleFirstNumber - secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("÷")) {
-                            double vivod = PervoeChislo / VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("÷")) {
+                            double outcome = (double) doubleFirstNumber / secondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        stroka = "";
-                    } else if (kuskiStroki[0].matches("//D") & !kuskiStroki[2].matches("//D")) {
-                        double PervoeChislo = Double.parseDouble(kuskiStroki[0]);
-                        int doubleVtoroeChislo = Integer.parseInt(kuskiStroki[2]);
-                        double VtoroeChislo = doubleVtoroeChislo;
+                        line = "";
+                    } else if (lineParts[0].matches("//D") & !lineParts[2].matches("//D")) {
+                        double firstNumber = Double.parseDouble(lineParts[0]);
+                        int doubleSecondNumber = Integer.parseInt(lineParts[2]);
 
-                        stroka = stroka + " =";
+                        line = line + " =";
                         TextView textView = findViewById(R.id.ViewCalculate);
-                        textView.setText(stroka);
-                        TextView textVivod = findViewById(R.id.Vivod);
-                        textVivod.setText(stroka);
+                        textView.setText(line);
+                        TextView textOutcome = findViewById(R.id.outcome);
+                        textOutcome.setText(line);
 
-                        if (kuskiStroki[1].equals("x")) {
-                            double vivod = PervoeChislo * VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("x")) {
+                            double outcome = firstNumber * (double) doubleSecondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("+")) {
-                            double vivod = PervoeChislo + VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("+")) {
+                            double outcome = firstNumber + (double) doubleSecondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("-")) {
-                            double vivod = PervoeChislo - VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("-")) {
+                            double outcome = firstNumber - (double) doubleSecondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("÷")) {
-                            double vivod = PervoeChislo / VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("÷")) {
+                            double outcome = firstNumber / (double) doubleSecondNumber;
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        stroka = "";
+                        line = "";
                     } else {
-                        int doublePervoeChislo = Integer.parseInt(kuskiStroki[0]);
-                        double PervoeChislo = doublePervoeChislo;
-                        int doubleVtoroeChislo = Integer.parseInt(kuskiStroki[2]);
-                        double VtoroeChislo = doubleVtoroeChislo;
 
-                        stroka = stroka + " =";
+                        line = line + " =";
                         TextView textView = findViewById(R.id.ViewCalculate);
-                        textView.setText(stroka);
-                        TextView textVivod = findViewById(R.id.Vivod);
-                        textVivod.setText(stroka);
+                        textView.setText(line);
+                        TextView textOutcome = findViewById(R.id.outcome);
+                        textOutcome.setText(line);
 
-                        if (kuskiStroki[1].equals("x")) {
-                            double vivod = PervoeChislo * VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("x")) {
+                            double outcome = (double) Integer.parseInt(lineParts[0]) * (double) Integer.parseInt(lineParts[2]);
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("+")) {
-                            double vivod = PervoeChislo + VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("+")) {
+                            double outcome = (double) Integer.parseInt(lineParts[0]) + (double) Integer.parseInt(lineParts[2]);
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("-")) {
-                            double vivod = PervoeChislo - VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("-")) {
+                            double outcome = (double) Integer.parseInt(lineParts[0]) - (double) Integer.parseInt(lineParts[2]);
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        if (kuskiStroki[1].equals("÷")) {
-                            double vivod = PervoeChislo / VtoroeChislo;
-                            String stringVivod = String.valueOf(vivod);
-                            textVivod.setText(stringVivod);
+                        if (lineParts[1].equals("÷")) {
+                            double outcome = (double) Integer.parseInt(lineParts[0]) / (double) Integer.parseInt(lineParts[2]);
+                            String stringOutcome = String.valueOf(outcome);
+                            textOutcome.setText(stringOutcome);
                         }
-                        stroka = "";
+                        line = "";
                     }
                 }
             }
@@ -417,14 +411,14 @@ public class MainActivity extends AppCompatActivity {
         btnProcent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(stroka.matches("\\d*")){
-                    double chislo = Long.parseLong(stroka);
+                if(line.matches("\\d*")){
+                    double chislo = Long.parseLong(line);
                     double procent = chislo / 100;
                     TextView textView = findViewById(R.id.ViewCalculate);
-                    String vivod = String.valueOf(procent);
-                    TextView textVivod = findViewById(R.id.Vivod);
-                    textVivod.setText(vivod);
-                    textView.setText(stroka);
+                    String outcome = String.valueOf(procent);
+                    TextView textOutcome = findViewById(R.id.outcome);
+                    textOutcome.setText(outcome);
+                    textView.setText(line);
                 }else{
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "Введите число", Toast.LENGTH_SHORT);
