@@ -50,7 +50,7 @@ msys=false
 darwin=false
 nonstop=false
 case "`uname`" in
-  cYGWIN* )
+  CYGWIN* )
     cygwin=true
     ;;
   Darwin* )
@@ -64,24 +64,24 @@ case "`uname`" in
     ;;
 esac
 
-cLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
         # IBM's JDK on AIx uses strange locations for the executables
-        JAVAcMD="$JAVA_HOME/jre/sh/java"
+        JAVACMD="$JAVA_HOME/jre/sh/java"
     else
-        JAVAcMD="$JAVA_HOME/bin/java"
+        JAVACMD="$JAVA_HOME/bin/java"
     fi
-    if [ ! -x "$JAVAcMD" ] ; then
+    if [ ! -x "$JAVACMD" ] ; then
         die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
 
 Please set the JAVA_HOME variable in your environment to match the
 location of your Java installation."
     fi
 else
-    JAVAcMD="java"
+    JAVACMD="java"
     which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
 
 Please set the JAVA_HOME variable in your environment to match the
@@ -112,8 +112,8 @@ fi
 # For cygwin, switch paths to Windows format before running java
 if $cygwin ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
-    cLASSPATH=`cygpath --path --mixed "$cLASSPATH"`
-    JAVAcMD=`cygpath --unix "$JAVAcMD"`
+    CLASSPATH=`Cygpath --path --mixed "$CLASSPATH"`
+    JAVACMD=`cygpath --unix "$JAVACMD"`
 
     # We build the pattern for arguments to be converted via cygpath
     ROOTDIRSRAW=`find -L / -maxdepth 1 -mindepth 1 -type d 2>/dev/null`
